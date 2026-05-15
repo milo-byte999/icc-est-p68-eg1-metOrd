@@ -9,6 +9,20 @@ public class App {
         // MovieController
         // imprimir la lista de películas ordenada
 
+        Movie[] movies = generateMoviesList();
+
+        System.out.println("Peliculas sin ordenar:");
+        for (Movie movie : movies) {
+            System.out.println(movie);
+        }
+
+        MovieController controller = new MovieController();
+        controller.sortByTitle(movies);
+
+        System.out.println("Peliculas ordenadas");
+        for (Movie movie : movies) {
+            System.out.println(movie);
+        }
     }
 
     /**
