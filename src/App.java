@@ -8,6 +8,7 @@ public class App {
         // ordenar la lista de películas por título utilizando el método sortByTitle del
         // MovieController
         // imprimir la lista de películas ordenada
+        // Emilio Montaleza
 
         Movie[] movies = generateMoviesList();
 
